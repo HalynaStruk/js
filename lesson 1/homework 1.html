@@ -16,9 +16,9 @@
     let o = 'owu';
     let co = 'com';
     let u = 'ua';
-    let a = 1;
-    let b = 10;
-    let c = -999;
+    let k = 1;
+    let l = 10;
+    let m = -999;
     let d = 123;
     let e = 3.14;
     let f = 2.7;
@@ -29,9 +29,9 @@
     document.write(o+'.');
     document.write(co+'.');
     document.write(u);
-    console.log(a);
-    console.log(b);
-    console.log(c);
+    console.log(k);
+    console.log(l);
+    console.log(m);
     console.log(d);
     console.log(e);
     console.log(f);
@@ -44,9 +44,9 @@
     o = 'devdocs';
     co = 'io';
     u = 'javascript';
-    a = 12;
-    b = 35;
-    c = 3.056;
+    k = 12;
+    l = 35;
+    m = 3.056;
     d = -25;
     e = true;
     f = 0.375;
@@ -54,20 +54,75 @@
     h = -300;
     i = 'good';
     alert(he);
+    document.write(`<div>${i}</div>`);
     document.write(' '+o+'.');
     document.write(co+'/');
     document.write(u+'/ ');
-    console.log(a);
-    console.log(b);
-    console.log(c);
+    console.log(k);
+    console.log(l);
+    console.log(m);
     console.log(d);
     console.log(e);
     console.log(f);
     console.log(g);
     console.log(h);
-    document.write(i);
     // 3.Створити 3 змінних firstName, middleName, lastName, наповнити їх своїм ПІБ.
     // З'єднати їх в одну змінну person. (Не об'єкт)
+    let firstName = 'Halyna';
+    let middleName = 'Petrivna';
+    let lastName = 'Struk';
+    let person = (lastName+' '+firstName+' '+middleName);
+    console.log(person);
+    // 4.За допомогою 3х різних prompt() отримати 3 слова
+    // які являються вашими Імям, По-Батькові та роками.
+    // Вивести "Вітаю *Імя* *По батькові*. Тобі *вік* років".
+    let Name = prompt('Імя та По батькові', 'Галина Петрівна');
+    let age = prompt('Вік', '27');
+    let result = prompt('Вітаю'+' '+Name+'.'+' Тобі'+' '+age+' '+'років');
+    alert(result);
+    // 4.За допомогою оператора typeof визначити типи наступних змінних та вивести їх в консоль.
+    //  let a = 100; let b = '100'; let c = true;
+    let a = 100;
+    let b = '100';
+    let c = true;
+    console.log(typeof a);
+    console.log(typeof b);
+    console.log(typeof c);
+    // 5.Визначити відповідний оператор в виразах що б вийшов відповідний результат.
+    // В однакових виразах не використовувати однакові оператори!!!
+    // 5 ? 6 -> true
+    // 5 ? 6 -> false
+    // 5 ? 6 -> false
+    // 5 ? 6 -> false
+    // 10 ? 10 -> true
+    // 10 ? 10 -> true
+    // 10 ? 10 -> false
+    // 10 ? 10 -> false
+    // 10 ? 10 -> false
+    // 123 ? '123' -> false
+    // 123 ? '123' -> true
+    let bol1 = 5 !== 6;
+    console.log(bol1);
+    let bol2 = 5 > 6;
+    console.log(bol2);
+    let bol3 = 5 === 6;
+    console.log(bol3);
+    let bol4 = 5 >= 6;
+    console.log(bol4);
+    let bol5 = 10 === 10;
+    console.log(bol5);
+    let bol6 = 10 <= 10;
+    console.log(bol6);
+    let bol7 = 10 !== 10;
+    console.log(bol7);
+    let bol8 = 10 < 10;
+    console.log(bol8);
+    let bol9 = 10 > 10;
+    console.log(bol9);
+    let bol10 = 123 === '123';
+    console.log(bol10);
+    let bol11 = 123 == '123';
+    console.log(bol11);
 
 </script>
 </body>
