@@ -57,7 +57,7 @@
     document.write(`<div>${i}</div>`);
     document.write(' '+o+'.');
     document.write(co+'/');
-    document.write(u+'/ ');
+    document.write(u+'/ '+"<br/>");
     console.log(k);
     console.log(l);
     console.log(m);
@@ -123,7 +123,19 @@
     console.log(bol10);
     let bol11 = 123 == '123';
     console.log(bol11);
-
+    // 6.Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+    let str = "20";
+    let aa = 5;
+    document.write(str + aa + "<br/>");
+    // 205 тому що змінна аа стає стрінговою і результат буде просто обєднані цифри
+    document.write(str - aa + "<br/>");
+    // 15 у цьому та двох випадках нище код працює як з цифрами та обраховує їх,
+    //думаю що тут не спрацювало попереднє правило, бо тільки задопомогою + ми обєднюємо стрінгові значення,
+    //а інші знаки працють як у математиці
+    document.write(str * "2" + "<br/>");
+    // 40
+    document.write(str / 2 + "<br/>");
+    // 10
 </script>
 </body>
 </html>
