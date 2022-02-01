@@ -53,8 +53,28 @@
     console.log(books[0]);
     console.log(books[1]);
     console.log(books[2]);
-
-
+    //5. Напишіть код, який вираховує площу прямокутника висотою 23см. (змінна height) та шириною 10см (змінна width).
+    // Значення площі зберігати в змінній s.
+    let height = 23;
+    let width = 10;
+    let s = height*width;
+    console.log(s);
+    // 6. Напиши код, який знаходить об'єм циліндра заввишки 10м (змінна heightC) та діаметром основи 4м (dC),
+    // результат помістіть у змінну v.
+    let heightC = 10;
+    let dC = 4;
+    const PI = 3.14159265359;
+    let v = PI*Math.pow(dC/2, 2)*heightC;
+        console.log(v);
+    // 7. У прямокутного трикутника дві сторони n (зі значенням 3) та m (зі значенням 4).
+    // Знайдіть гіпотенузу k за теоремою Піфагора
+    // (потрібно використовувати функцію Math.pow (число, ступінь) або оператор зведення в ступінь **).
+    let n = 3;
+    let m = 4;
+    let k = Math.sqrt(Math.pow(n, 2)+Math.pow(m, 2));
+    console.log(k);
+    let k1 = Math.sqrt(n**2+m**2);
+    console.log(k1);
 </script>
 </body>
 </html>
