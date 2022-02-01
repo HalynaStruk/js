@@ -17,7 +17,42 @@
     let result1 = Math.floor(Math.random()*10);
     console.log(result1)
     //2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
-
+    let book = {
+        title: 'Harry Potter',
+        numberofpages: 520,
+        genre: 'fantasy'
+    }
+    //3. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр, автори
+    let book1 = {
+        title: 'Collection of poems',
+        numberofpages: 238,
+        genre: 'poem',
+        authors: ['Taras Shevchenko', 'Lesya Ukrainka', 'Lina Kostenko']
+    }
+    //4. Створити масив об'єктів book з наступними полями  - назва, кількість сторінок, жанр, автори.
+    // Вивести кожну книгу як окремий об'єкт
+    let collectionofpoems = {
+        title: 'Collection of poems',
+        numberofpages: 238,
+        genre: 'poem',
+        authors: ['Taras Shevchenko', 'Lesya Ukrainka', 'Lina Kostenko']
+    }
+    let tales = {
+        title: 'Tales',
+        numberofpages: 357,
+        genre: 'tales',
+        authors: ['Charles Perrault', 'Hans Christian Andersen']
+    }
+    let harrypotter = {
+        title: 'Harry Potter',
+        numberofpages: 520,
+        genre: 'fantasy',
+        authors: 'Joan Rowling'
+    }
+    let books = [collectionofpoems, tales, harrypotter];
+    console.log(books[0]);
+    console.log(books[1]);
+    console.log(books[2]);
 
 
 </script>
