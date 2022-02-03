@@ -11,11 +11,13 @@
 <script>
     // 1. Створити масив з 10 чисел (можна використовувати Math.random Та Math.floor).
     // Скласти результат цих чисел в змінній result.
-    let result = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-    console.log(result)
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let result = arr[0]+arr[1]+arr[2]+arr[3]+arr[4]+arr[5]+arr[6]+arr[7]+arr[8]+arr[9];
+    console.log(result);
     //або
-    let result1 = Math.floor(Math.random()*10);
-    console.log(result1)
+    let arr1 = Math.floor(Math.random()*10);
+    let result1 = arr1+arr1+arr1+arr1+arr1+arr1+arr1+arr1+arr1+arr1;
+    console.log(result1);
     //2. Створити об'єкт book з наступними полями  - назва, кількість сторінок, жанр
     let book = {
         title: 'Harry Potter',
