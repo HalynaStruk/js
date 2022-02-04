@@ -4,6 +4,7 @@
     <list default="true" id="c00cc32b-2ce5-445c-8f13-bf52d5b4ee09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson 2/classwork2.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 2/classwork2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson 2/homework2.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 2/homework2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +64,7 @@
       <workItem from="1643727636299" duration="260000" />
       <workItem from="1643728555477" duration="14429000" />
       <workItem from="1643897712119" duration="737000" />
-      <workItem from="1643898485468" duration="7704000" />
+      <workItem from="1643898485468" duration="16549000" />
     </task>
     <task id="LOCAL-00001" summary="classwork 1">
       <created>1643732695448</created>
@@ -135,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643905229492</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="classwork 2">
+      <created>1643909822557</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643909822557</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
