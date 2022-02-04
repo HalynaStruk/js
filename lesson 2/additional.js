@@ -2,12 +2,21 @@
 // Потрібно зробити перевірку якщо кількість елементів у масиві більше або дорівнює 3,
 // то виводиться повідомлення про те, що це великий масив, в якому  3 і більше елементи.
 // Інакше слід вивести на екран повідомлення про те, що це маленький масив, в якому менше 3-х елементів.
-let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
-(friends.length >= 3) ? console.log('це великий масив, в якому  3 і більше елементи') : console.log('це маленький масив');
+// let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
+// (friends.length >= 3) ? console.log('це великий масив, в якому  3 і більше елементи') : console.log('це маленький масив');
 // 2. Маємо 3 числа і між ним  нам потрібно знайти те що посередині.
 // Знайти, яке з них є середнім (більше одного, але менше за інше).
 // Перевірити, чи знаходиться перше число між двома іншими.
-
+let q = prompt('Enter number 1');
+let w = prompt('Enter number 2');
+let e = prompt('Enter number 3');
+if ((q>w && q<e) || (q<w && q>e)) {
+    console.log(q);
+} else if ((w>q && w<e) || (w<q && w>e)) {
+    console.log(w);
+} else if ((e>w && e<q) || (e<w && e>q)) {
+    console.log(e);
+}
 // 3. Перепишіть конструкцію if з використанням умовного оператора '?':
 // let result;
 // if (a + b < 4) {
@@ -15,8 +24,9 @@ let friends = ["Ivan", "Slavik", "Grisha", "Lera", "Ira"];
 // } else {
 //     result = 'Багато';
 // }
-(a + b < 4) ? console.log('Мало') : console.log('Багато')
+// (a + b < 4) ? console.log('Мало') : console.log('Багато')
 // 4. Маємо будь яке число від -100 , 0 , +100 потрібно перевірити яким є число: позитивним,
 // негативним або нулем. Напишіть це тернарним оператором
-let number = prompt('Enter number from -100 to +100');
-(number >=-100)
+// let number = prompt('Enter number from -100 to +100');
+// (number <=100 && number >0) ? console.log('число є позитивним') : console.log('число є негативним');
+// (number = 0)
