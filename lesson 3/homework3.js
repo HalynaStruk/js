@@ -21,11 +21,20 @@ for (let i = 0; i < 10; i++) {
 }
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 for (let i = 0; i < 10; i++) {
-    document.write(`<div>text${i}</div>`);
+    document.write(`<div>text ${i} text</div>`);
 }
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
+let q = 0;
+while (q < 20) {
+    document.write(`<h1>some text</h1>`);
+    q++
+}
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
-
+let w = 0;
+while (w < 20) {
+    document.write(`<h1>some ${w} text</h1>`);
+    w++
+}
 // - Створити масив з 10 числових елементів. Вивести в консоль всі його елементи в циклі.
 let arr10num = [23,14,78,90,3,54,37,87,91,2];
 for (let i = 0; i < arr10num.length; i++) {
@@ -77,13 +86,25 @@ for (let i = 0; i < emptyarrs.length; i++) {
 }
 // - Створити цикл for на 10  ітерацій з кроком 1.
 // Вивести поточний номер кроку через console.log та document.write
-
+for (let i = 0; i < 10; i++) {
+    document.write (i +"<br/>");
+    console.log(i);
+}
 // - Створити цикл for на 100 ітерацій з кроком 1.
 // Вивести поточний номер кроку через console.log та document.write
-
+for (let i = 0; i < 100; i++) {
+    document.write (i);
+    console.log(i);
+}
 // - Створити цикл for на 100 ітерацій з кроком 2.
 // Вивести поточний номер кроку через console.log та document.write
-
+for (let i = 0; i < 100; i+=2) {
+    document.write (i);
+    console.log(i);
+}
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
-
+for (let i = 0; i < 100; i-=1) {
+    document.write (i);
+    console.log(i);
+}
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
