@@ -103,8 +103,16 @@ for (let i = 0; i < 100; i+=2) {
     console.log(i);
 }
 // - Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
-for (let i = 0; i < 100; i-=1) {
-    document.write (i);
-    console.log(i);
+for (let x = 1; x < 100; x++) {
+    if (x%2 === 0) {
+    document.write (x);
+    console.log(x);
+    }
 }
 // - Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+for (let z = 0; z < 100; z++) {
+    if ( z%2 !== 0) {
+        document.write (z);
+        console.log(z);
+    }
+}
