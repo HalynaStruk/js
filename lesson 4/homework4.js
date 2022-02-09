@@ -14,14 +14,37 @@ function sqrcylinder(h,r) {
 }
 console.log(sqrcylinder(50,10));
 // 4. створити функцію яка приймає масив та виводить кожен його елемент
-
+let arr = ['lesson', 1, 2, 3, 4, 'javascript', 'study', true];
+function arrs(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);
+    }
+}
+arrs(arr);
 // 5. створити функцію яка створює параграф з текстом. Текст задати через аргумент
-
+function paragraph(t) {
+    document.write(`<p>${t}</p>`);
+}
+paragraph('some text');
 // 6. створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
-
+function listCreator(txt) {
+    document.write(`<ul>`);
+    document.write(`<li>${txt}</li>`);
+    document.write(`<li>${txt}</li>`);
+    document.write(`<li>${txt}</li>`);
+    document.write(`</ul>`);
+}
+listCreator('item');
 // 7. створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
-
+function listCreator2(text,number) {
+    document.write(`<ul>`);
+    for (let i = 0; i < number; i++) {
+        document.write(`<li>${text}</li>`);
+    }
+    document.write(`</ul>`);
+}
+listCreator2('item2',3);
 // 8. створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві),
 // та будує для них список
 
