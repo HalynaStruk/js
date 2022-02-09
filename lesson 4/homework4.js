@@ -45,8 +45,15 @@ function listCreator2(text,number) {
     document.write(`</ul>`);
 }
 listCreator2('item2',3);
-// 8. створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві),
-// та будує для них список
-
+// 8. створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві),та будує для них список.
+let arr2 = [true, 'lesson1', 'lesson2', 'lesson3', 'lesson4', false, 'lesson5', 6, 7, 8];
+function listCreatorArr2(arr2) {
+    document.write(`<ul>`);
+    for (let i = 0; i < arr2.length; i++) {
+        document.write(`<li>${arr2[i]}</li>`);
+    }
+    document.write(`</ul>`);
+}
+listCreatorArr2(arr2);
 // 9. створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
