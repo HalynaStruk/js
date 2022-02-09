@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c00cc32b-2ce5-445c-8f13-bf52d5b4ee09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson 3/additional 3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson 3/additional3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson 4/classwork 4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson 4/classwork4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson 4/homework 4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson 4/homework4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson 3/additional3.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 3/additional3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +68,8 @@
       <workItem from="1643728555477" duration="14429000" />
       <workItem from="1643897712119" duration="737000" />
       <workItem from="1643898485468" duration="21929000" />
-      <workItem from="1644327869943" duration="12869000" />
+      <workItem from="1644327869943" duration="13283000" />
+      <workItem from="1644399634261" duration="40000" />
     </task>
     <task id="LOCAL-00001" summary="classwork 1">
       <created>1643732695448</created>
@@ -213,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644353568281</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="additional 3">
+      <created>1644353893724</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1644353893724</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +239,7 @@
     <MESSAGE value="additional" />
     <MESSAGE value="homework 3" />
     <MESSAGE value="classwork 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="classwork 3" />
+    <MESSAGE value="additional 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="additional 3" />
   </component>
 </project>
