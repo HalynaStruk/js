@@ -57,3 +57,10 @@ function listCreatorArr2(arr2) {
 listCreatorArr2(arr2);
 // 9. створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
+let arrayOfObject = [{id: 1, name:'Max', age: 16},{id: 2, name:'Ivan', age: 18},{id: 3, name:'Anna', age: 21},{id: 4, name:'Ira', age: 25},{id: 5, name:'Nastya', age: 30}];
+function objects (arrayOfObject) {
+    for (let i = 0; i < arr2.length; i++) {
+        document.write(`<div>${'id: '+ arrayOfObject[i].id + ' name: ' + arrayOfObject[i].name + ' age: ' +  arrayOfObject[i].age}</div>`);
+    }
+}
+objects (arrayOfObject);
