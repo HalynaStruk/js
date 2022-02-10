@@ -65,25 +65,70 @@ function arithmetic(numbers) {
 document.write(arithmetic(numbers) + '<br>');
 // 7. створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
 // а виводить найбільше (Math використовувати заборонено);
-function retMinConsMax(anynumbers) {
-    let min = anynumbers[0];
-    let max = anynumbers[0];
-    for (let i = 0; i < anynumbers.length; i++) {
-        if (anynumbers[i] > max) {
-            anynumbers[i] = max;
-        }
-        if (anynumbers[i] < min) {
-            anynumbers[i] = min;
-        }
-    }
-    console.log(max);
-    return min;
-}
-document.write(retMinConsMax([5,15,3,27]) + '<br>');
+// debugger;
+// function retMinConsMax(anynumbers) {
+//     for (let i = 0; i < anynumbers.length; i++) {
+//         if (anynumbers[i] > anynumbers[0]) {
+//             anynumbers[i] = max;
+//         }
+//         if (anynumbers[i] < anynumbers[0]) {
+//             anynumbers[i] = min;
+//         }
+//     }
+//     console.log(max);
+//     return min;
+// }
+// document.write(retMinConsMax([5,15,3,27]) + '<br>');
+
+// function minMax(arg) {
+//     let min = arguments[0];
+//     let max = arguments[0];
+//     for (const element of arguments) {
+//         if (element > max) {
+//             max = element;
+//         }
+//         if (element < min) {
+//             min = element;
+//         }
+//     }
+//     console.log("max ", max);
+//     return min;
+// }
+// document.write('Мінімальне число з введених: ' + minMax(100, 20, 3, 100, 2021))
 // 8. створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 
+function generatesran(quantity) {
+    let arrayRandom = [];
+    for (let i = 0; i < quantity; i++) {
+        r = Math.round(Math.random()*100);
+        arrayRandom.push(r);
+    }
+    console.log(arrayRandom);
+}
+generatesran(20);
 // 9. створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit.
 // limit - аргумент, який характеризує кінцеве значення діапазону.
-
+function generateslim(quantity,limit) {
+    let arrayLimit = [];
+    for (let i = 0; i < quantity; i++) {
+        l = Math.round(Math.random()*limit);
+        arrayLimit.push(l);
+    }
+    console.log(arrayLimit);
+}
+generateslim(15,400);
 // 10. Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
+function generates(quantity) {
+    let arr = [];
+    for (let i = 0; i < quantity; i++) {
+        g = Math.round(Math.random()*100);
+        arr.push(g);
+    }
+    console.log(arr);
+    arr[i] = arr[k];
+    for (let k = arr.length-1; k >=0 ; k--) {
+    }
+    console.log(arr);
+}
+generatesran(5);
