@@ -8,11 +8,27 @@ for (let i = 0; i < 50; i++) {
     }
 }
 console.log(arr);
-// console.log(arr);
 //     b. заповнити його 50 непарними числами за допомоги циклу.
+// let arr2 = [];
+// for (let j = 0; j < 50; j++) {
+//     let z = Math.round(Math.random() * 400);
+//     if (z % 2 === 1) {
+//         arr.push(z);
+//     }
+// }
+// console.log(arr2);
 //     c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
+let arr3 = [];
+for (let i = 0; i < 20; i++) {
+    arr3.push(Math.round(Math.random() * 100));
+}
+console.log(arr3);
 //     d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
-
+let arr4 = [];
+for (let i = 0; i < 20; i++) {
+    arr4.push(Math.round(Math.random() * (732-8)+8));
+}
+console.log(arr4);
 // 2. Вивести за допомогою console.log кожен третій елемен
 
 // 3. Вивести за допомогою console.log кожен третій елемен тільки якщо цей елемент є парним.
