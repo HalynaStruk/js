@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c00cc32b-2ce5-445c-8f13-bf52d5b4ee09" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 4/classwork4.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 4/classwork4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson 3/additional3.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 3/additional3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +68,7 @@
       <workItem from="1644399634261" duration="40000" />
       <workItem from="1644407930659" duration="1751000" />
       <workItem from="1644409923978" duration="17028000" />
-      <workItem from="1644486764086" duration="3585000" />
+      <workItem from="1644486764086" duration="5390000" />
     </task>
     <task id="LOCAL-00001" summary="classwork 1">
       <created>1643732695448</created>
@@ -280,7 +280,21 @@
       <option name="project" value="LOCAL" />
       <updated>1644432219691</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="homework 4">
+      <created>1644507814837</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1644507814837</updated>
+    </task>
+    <task id="LOCAL-00032" summary="classwork 4">
+      <created>1644507993326</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1644507993326</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,8 +309,8 @@
     <MESSAGE value="homework 3" />
     <MESSAGE value="classwork 3" />
     <MESSAGE value="additional 3" />
-    <MESSAGE value="classwork 4" />
     <MESSAGE value="homework 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework 4" />
+    <MESSAGE value="classwork 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="classwork 4" />
   </component>
 </project>

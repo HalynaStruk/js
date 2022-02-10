@@ -1,6 +1,14 @@
 // 1. Створити пустий масив та :
 let arr = [];
 //     a. заповнити його 50 парними числами за допомоги циклу.
+for (let i = 0; i < 50; i++) {
+    let k = Math.round(Math.random() * 400);
+    if (k % 2 === 0) {
+        arr.push(k);
+    }
+}
+console.log(arr);
+// console.log(arr);
 //     b. заповнити його 50 непарними числами за допомоги циклу.
 //     c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
 //     d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
