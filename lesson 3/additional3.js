@@ -2,25 +2,25 @@
 let arr = [];
 //     a. заповнити його 50 парними числами за допомоги циклу.
 for (let i = 0; i < 50; i++) {
-    let k = Math.round(Math.random() * 400);
+    let k = Math.round(Math.random() * 200);
     if (k % 2 === 0) {
         arr.push(k);
     }
 }
 console.log(arr);
 //     b. заповнити його 50 непарними числами за допомоги циклу.
-// let arr2 = [];
-// for (let j = 0; j < 50; j++) {
-//     let z = Math.round(Math.random() * 400);
-//     if (z % 2 === 1) {
-//         arr.push(z);
-//     }
-// }
-// console.log(arr2);
+let arr2 = [];
+for (let i = 0; i < 50; i++) {
+    let z = Math.round(Math.random() * 200);
+    if (z % 2 === 1) {
+        arr.push(z);
+    }
+}
+console.log(arr2);
 //     c. Заповнити масив 20ма рандомними числами. (Google: Generate random number JS)
 let arr3 = [];
 for (let i = 0; i < 20; i++) {
-    arr3.push(Math.round(Math.random() * 100));
+    arr3.push(Math.round(Math.random() * 300));
 }
 console.log(arr3);
 //     d. Заповнити масив 20ма рандомними чисалами в діапазоні від 8 до 732 (Google: Generate random number JS)
