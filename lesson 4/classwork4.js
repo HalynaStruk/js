@@ -65,7 +65,7 @@ function arithmetic(numbers) {
 document.write(arithmetic(numbers) + '<br>');
 // 7. створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
 // а виводить найбільше (Math використовувати заборонено);
-// debugger;
+
 // function retMinConsMax(anynumbers) {
 //     for (let i = 0; i < anynumbers.length; i++) {
 //         if (anynumbers[i] > anynumbers[0]) {
