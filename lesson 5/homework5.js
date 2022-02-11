@@ -39,3 +39,10 @@ let creatorList = (arr) => {
 creatorList([true, 'lesson1', 'lesson2', 'lesson3', 'lesson4', false, 'lesson5', 6, 7, 8])
 // 9. створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
+let creatorDiv = (arr) => {
+    for (let i = 0; i < arr.length; i++) {
+    document.write(`<div>${arr[i].id +'. '+ arr[i].name +' is '+ arr[i].age + ' years old'}</div>`)
+    }
+}
+creatorDiv([{id: 1, name:'Max', age: 16},{id: 2, name:'Ivan', age: 18},{id: 3, name:'Anna', age: 21},
+    {id: 4, name:'Ira', age: 25},{id: 5, name:'Nastya', age: 30}]);
