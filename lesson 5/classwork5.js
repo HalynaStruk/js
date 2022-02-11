@@ -1,15 +1,58 @@
 // Всі функції повинні бути описані стрілочним типом!!!!
 // 1. створити функцію яка приймає три числа та виводить найменьше. (Без Math.min!)
-
+let numbersMin = (a,b,c) => {
+    if (a<b && a<c) {
+        document.write(a +'<br>');
+    } else if (b<a && b<c) {
+        document.write(b +'<br>');
+    } else if (c<a && c<b) {
+        document.write(c +'<br>');
+    }
+}
+numbersMin(9,21,12);
 // 2. створити функцію яка приймає три числа та виводить найбільше. (Без Math.max!)
-
+let numberMax = (d,e,f) => {
+    if (d>e && d>f) {
+        document.write(d +'<br>');
+    } else if (e>d && e>f) { +'<br>'
+        document.write(e +'<br>');
+    } else if (f>d && f>e) {
+        document.write(f +'<br>');
+    }
+}
+numberMax(21,16,18);
 // 3. створити функцію яка повертає найбільше число з масиву
-
+let arrayMax = (arr) => {
+    let max = arr[0];
+    for (let arrElement of arr) {
+        if (arrElement > max) {
+        max = arrElement;
+        }
+    }
+    return max;
+}
+document.write('Найбільше число з масиву '+ arrayMax([2,10,23,15,8,45,32]) + '<br>');
 // 4. створити функцію яка повертає найменьше число з масиву
-
+let arrayMin = (arr) => {
+    let min = arr[0];
+    for (let arrElement of arr) {
+        if (arrElement < min) {
+            min = arrElement;
+        }
+    }
+    return min;
+}
+document.write('Найменше число з масиву '+ arrayMin([2,10,23,15,8,45,32]) + '<br>');
 // 5. створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його.
 // Приклад [1,2,10]->13
-
+let arraySum = (arr) => {
+    let sum = 0;
+    for (let arrElement of arr) {
+        sum = sum + arrElement;
+    }
+      return sum;
+}
+document.write('Сума значеннь елементів масиву ' + arraySum([5,10,15]));
 // 6. створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
 
 // 7. створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
