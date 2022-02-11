@@ -30,7 +30,12 @@ let creatorNumberList = (txt,number) => {
 creatorNumberList('Additional text',5);
 // 8. створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 let creatorList = (arr) => {
-
+    document.write(`<ul>`)
+    for (let i = 0; i < arr.length; i++) {
+        document.write(`<li>${arr[i]}</li>`);
+    }
+    document.write(`</ul>`)
 }
+creatorList([true, 'lesson1', 'lesson2', 'lesson3', 'lesson4', false, 'lesson5', 6, 7, 8])
 // 9. створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
