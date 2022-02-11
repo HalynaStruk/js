@@ -52,12 +52,33 @@ let arraySum = (arr) => {
     }
       return sum;
 }
-document.write('Сума значеннь елементів масиву ' + arraySum([5,10,15]));
+document.write('Сума значеннь елементів масиву ' + arraySum([5,10,15]) + '<br>');
 // 6. створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
-
+let arithmetic = (arr) => {
+    let sum = 0;
+    for (let arrElement of arr) {
+        sum = sum + arrElement;
+    }
+    return sum/arr.length;
+}
+document.write('Середнє арифметичне елементів масиву ' + arithmetic([5,10,20,15]) + '<br>');
 // 7. створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
 // а виводить найбільше (Math використовувати заборонено);
-
+let numbers = (num) => {
+    let max = num[0];
+    let min = num[0];
+    for (const numElement of num) {
+        if (numElement > max) {
+            max = numElement;
+        }
+        if (numElement < min) {
+            min = numElement;
+        }
+    }
+    document.write('Найбільше число ' + max + '<br>');
+    return min;
+}
+document.write('Найменше число ' + numbers([3,6,1,8,25,31,3,9,24]) + '<br>');
 // 8. створити функцію яка заповнює масив рандомними числами
 // (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100)) та виводить його.
 
