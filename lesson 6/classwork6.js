@@ -6,7 +6,19 @@
 // let n1 = 'Harry Potter'
 // let n2 = 'Ron Whisley'
 // let n3 = 'Hermione Granger'
-
+let n1 = 'Harry..Potter'
+let n2 = 'Ron---Whisley'
+let n3 = 'Hermione__Granger'
+let normalizationname = (name,sign) => {
+if (name.includes(sign)) {
+    let arr = name.split(sign);
+    let newname = arr.join(' ');
+    console.log(newname);
+}
+}
+normalizationname(n1,'..');
+normalizationname(n2,'---');
+normalizationname(n3,'__');
 // 2. створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
 
 // 3. створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
