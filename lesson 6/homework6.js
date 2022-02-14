@@ -54,8 +54,22 @@ delete_characters(str5, 21,26);
 // При цьому всі символи рядка необхідно перевести у верхній регістр.
 //     let str = "HTML JavaScript PHP";
 // document.writeln(insert_dash(str)); // 'HTML-JAVASCRIPT-PHP'
-
+let str7 = "HTML JavaScript PHP";
+let insert_dash = (str) => {
+    let upstr = str.toUpperCase();
+    let newstr = upstr.replaceAll(' ',' - ');
+    return newstr;
+}
+document.write(insert_dash(str7));
 // 8. Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка
 // з нижнього регістру у верхній.
-
+let transformationLowToUpp = (str) => {
+        let uppLetter = str[0].toUpperCase();
+        let newstr = str.replace(str[0],uppLetter);
+        document.write('<br>'+ newstr);
+}
+transformationLowToUpp('функція, яка приймає рядок як аргумент');
 // 9 Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
+let capitalize = (str) => {
+
+}
