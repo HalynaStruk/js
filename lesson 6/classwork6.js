@@ -29,16 +29,31 @@ let random = (length) => {
     }
    return arr;
 }
-document.write(random(10) + '<br>');
+document.write(random(5) + '<br>');
 // 3. створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
 // Відсортувати його за допомоги sort
 document.write(random(10).sort((current,next) => current - next) + '<br>');
+document.write(random(15).sort((current,next) => next - current) + '<br>');
 // 4. створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
 // Відфільтрувати  його за допомоги filter, залишивши тільки парні числа
-
+let filter = (length) => {
+    let arr = [];
+    for (let i = 0; i < length; i++) {
+         arr.push(Math.round(Math.random()*100));
+    }
+    return arr.filter(arg => arg % 2 === 0);
+}
+document.write(filter(20) + '<br>');
 // 5. створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) .
 // За допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
-
+let transformationArrToStr = (length) => {
+    let arr = [];
+    for (let i = 0; i < length; i++) {
+        arr.push(Math.round(Math.random()*100));
+    }
+    return arr.map(arg => arg.toString());
+}
+console .log(transformationArrToStr(20));
 // 6. створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого,
 // або навпаки в залежності від значення аргументу direction.
 //     let nums = [11,21,3];
