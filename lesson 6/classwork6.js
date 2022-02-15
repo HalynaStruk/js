@@ -25,13 +25,14 @@ let random = (length) => {
     for (let i = 0; i < length; i++) {
         arr[i] = Math.round(Math.random()*100);
         // arr.push(Math.round(Math.random()*100));
+
     }
    return arr;
 }
 document.write(random(10) + '<br>');
 // 3. створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
 // Відсортувати його за допомоги sort
-
+document.write(random(10).sort((current,next) => current - next) + '<br>');
 // 4. створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
 // Відфільтрувати  його за допомоги filter, залишивши тільки парні числа
 
