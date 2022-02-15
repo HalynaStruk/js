@@ -20,7 +20,15 @@ normalizationname(n1,'..');
 normalizationname(n2,'---');
 normalizationname(n3,'__');
 // 2. створити функцію, яка генерує масив рандомних числових цілих значень в діапазоні від 0 до 100.
-
+let random = (length) => {
+    let arr = [];
+    for (let i = 0; i < length; i++) {
+        arr[i] = Math.round(Math.random()*100);
+        // arr.push(Math.round(Math.random()*100));
+    }
+   return arr;
+}
+document.write(random(10) + '<br>');
 // 3. створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень.
 // Відсортувати його за допомоги sort
 
