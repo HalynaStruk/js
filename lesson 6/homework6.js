@@ -64,12 +64,21 @@ document.write(insert_dash(str7));
 // 8. Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка
 // з нижнього регістру у верхній.
 let transformationLowToUpp = (str) => {
-        let uppLetter = str[0].toUpperCase();
-        let newstr = str.replace(str[0],uppLetter);
+    if (str.startsWith(' ')) {
+        let newstr = str.replace(str[1],str[1].toUpperCase());
+        document.write('<br>'+ newstr);
+    } else {
+        let newstr = str.replace(str[0],str[0].toUpperCase());
         document.write('<br>'+ newstr);
 }
-transformationLowToUpp('функція, яка приймає рядок як аргумент');
+}
+transformationLowToUpp(' функція, яка приймає рядок як аргумент');
 // 9 Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
 let capitalize = (str) => {
-
+ let arr = str.split(' ');
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = arr[i][0].toUpperCase()+arr[i].substring(1);
+    }
+    return arr.join(' ');
 }
+document.write('<br>'+ capitalize('яка повертає рядок, у якому кожне слово починається з великої літери.'));
