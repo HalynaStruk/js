@@ -57,8 +57,7 @@ delete_characters(str5, 21,26);
 let str7 = "HTML JavaScript PHP";
 let insert_dash = (str) => {
     let upstr = str.toUpperCase();
-    let newstr = upstr.replaceAll(' ',' - ');
-    return newstr;
+    return upstr.replaceAll(' ',' - ');
 }
 document.write(insert_dash(str7));
 // 8. Напишіть функцію, яка приймає рядок як аргумент і перетворює регістр першого символу рядка
