@@ -59,9 +59,25 @@ for (let i = 0; i < array5.length; i++) {
 }
 // 6. Є масив з числами [100,250,50,168,120,345,188], Які характеризують вартість окремої покупки.
 // Обрахувати середній чек.
+let array6 = [100,250,50,168,120,345,188];
+let sum = 0;
+for (let i = 0; i < array6.length; i++) {
+    sum = sum + array6[i];
+}
+console.log(Math.round(sum/array6.length));
 
 // 7. Створити масив з рандомними значеннями, помножити всі його елементи на 5 та перемістити їх в інший масив.
-
+let array7 = [];
+let newarray7 = [];
+for (let i = 0; i < 10; i++) {
+    a = Math.round(Math.random()*100);
+    array7.push(a);
+    newarray7.push(a*5);
+}
+console.log(array7);
+console.log(newarray7);
+// console.log(array7);
+// console.log(newarray7);
 // 8. Створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому,
 // і якщо елемент є числом - додати його в інший масив.
 
