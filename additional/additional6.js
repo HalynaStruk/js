@@ -107,7 +107,7 @@ let coursesArray = [
     }
 ];
 // відсортувати його в спадаючому порядку за кількістю елементів в полі modules
-console.log(coursesArray.sort((a,b) => (a[0].modules - a[1].modules)));
+// console.log(coursesArray.sort((a,b) => (a[0].modules - a[1].modules)));
 // 4. Напишіть функцію count(str, stringsearch), яка повертає кількість символів stringsearch у рядку str.
 //     let symb = "о", str = "Астрономия это наука о небесных объектах";
 // document.writeln(count(str, symb)) // 5
