@@ -53,13 +53,21 @@ let transformationArrToStr = (length) => {
     }
     return arr.map(arg => arg.toString());
 }
-console .log(transformationArrToStr(20));
+console.log(transformationArrToStr(20));
 // 6. створити функцію sortNums(direction), яка прймає масив чисел, та сортує його від більшого до меньшого,
 // або навпаки в залежності від значення аргументу direction.
 //     let nums = [11,21,3];
 // sortNums('ascending') // [3,11,21]
 // sortNums('descending') // [21,11,3]
-
+let sortNums = (direction,arr) => {
+    if (direction === 'ascending'){
+        arr.sort((current,next) => current - next);
+    } else if (direction === 'descending') {
+        arr.sort((current,next) => next - current);
+    }
+    return arr;
+}
+console.log(sortNums('ascending',[3,57,21,35,95,37,48,-6,149]));
 // 7. є масив
 // let coursesAndDurationArray = [
 //     {title: 'JavaScript Complex', monthDuration: 5},
