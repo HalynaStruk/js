@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c00cc32b-2ce5-445c-8f13-bf52d5b4ee09" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/additional/additional 6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/additional/additional6.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 6/classwork6.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 6/classwork6.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/additional/additional3.js" beforeDir="false" afterPath="$PROJECT_DIR$/additional/additional3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/additional" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/additional" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -75,14 +80,7 @@
       <workItem from="1644407930659" duration="1751000" />
       <workItem from="1644409923978" duration="17028000" />
       <workItem from="1644486764086" duration="28260000" />
-      <workItem from="1644746661122" duration="27704000" />
-    </task>
-    <task id="LOCAL-00010" summary="classwork 2">
-      <created>1643905229492</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1643905229492</updated>
+      <workItem from="1644746661122" duration="35195000" />
     </task>
     <task id="LOCAL-00011" summary="classwork 2">
       <created>1643909822557</created>
@@ -420,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645005766160</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="classwork 6">
+      <created>1645006424547</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1645006424547</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
