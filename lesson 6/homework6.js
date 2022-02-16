@@ -81,7 +81,7 @@ let capitalize = (str) => {
     return arr.join(' ');
 }
 document.write('<br>'+ capitalize('яка повертає рядок, у якому кожне слово починається з великої літери.'));
-           // це взяла з папки resolve, хотіла зрозуміти, як працює map
+           //
 let capitalize1 = (str) => {
     return str.split(' ').map(arg => arg[0].toUpperCase()+arg.slice(1)).join(' ');
 }
