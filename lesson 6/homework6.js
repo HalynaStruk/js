@@ -24,7 +24,8 @@ let jIcLC = jIc.toLowerCase();
 console.log(jIcLC);
 // 4. Є "брудна" стрінга let str = ' dirty string   ' . Почистити її від зайвих пробілів.
 let str = ' dirty string   ';
-let newstr = str.replaceAll(' ','').replace('y','y ');
+let newstr = str.trim();
+// let newstr = str.replaceAll(' ','').replace('y','y ');
 console.log(newstr);
                                   //або
 console.log(str.indexOf('d')); //0
