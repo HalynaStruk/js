@@ -127,11 +127,28 @@ for (let i = 0; i < citiesWithId.length; i++) {
 }
 console.log(usersWithCities);
 // 10. Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
-
+let array10 = [3,5,10,9,7,16,13,15,18,21];
+for (const number of array10) {
+    if (number%2 === 0) {
+        console.log(number);
+    }
+}
 // 11. Взяти масив з 10 чисел або створити його.
 // Створити 2й порожній масив. За допомогою будь-якого циклу скопіювати значення одного масиву в інший.
+let array11 = [1,2,3,4,5,6,7,8,9,10];
+let copyarr = [];
+for (let i = 0; i < array11.length; i++) {
+   copyarr[i] = array11[i];
+}
+console.log(array11);
+console.log(copyarr);
 
+let arrayy = [1,2,3,4,5,6,7,8,9,10];
+copyarrr = arrayy.slice(0);
+console.log(arrayy);
+console.log(copyarrr);
 // 12. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
+let arr12 = [ 'a', 'b', 'c'];
 
 // 13. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
 
