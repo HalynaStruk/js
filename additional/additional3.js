@@ -169,4 +169,4 @@ let sum4 = '';
 for (const str of array14) {
     sum4 = sum4 + str;
 }
-console.log(sum4);
+console.log(sum4)
