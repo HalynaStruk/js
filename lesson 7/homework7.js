@@ -11,3 +11,10 @@
 
 // 5. Взяти масив (Client [] з попереднього завдання).
 // Відсортувати його по кількості товарів в полі order по зростанню. (sort)
+
+let user = {
+    id: 1,
+    name: 'kokos'
+}
+user.surname = 'abrikosov';
+console.log(user);

@@ -121,11 +121,11 @@ let citiesWithId = [
 //         ]
 let usersWithCities =[];
 for (let i = 0; i < citiesWithId.length; i++) {
-    usersSities.push(usersWithId[i] + citiesWithId[i]);
+    citiesWithId.sort((a,b) => a.user_id-b.user_id);
+    usersWithId[i].address = citiesWithId[i];
+    usersWithCities.push(usersWithId[i]);
 }
-// usersSities.push(usersWithId[i].arguments[i] + citiesWithId[i]);
 console.log(usersWithCities);
-
 // 10. Взяти масив з 10 чисел або створити його. Вивести в консоль тільки ті елементи, значення яких є парними.
 
 // 11. Взяти масив з 10 чисел або створити його.
