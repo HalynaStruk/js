@@ -6,7 +6,13 @@
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів,
 // і додає його в поточний об'єкт car
-
+function Car(model, manufacturer, year_of_manufacture, maximum_speed, engine_capacity) {
+    this.model = model;
+    this.manufacturer = manufacturer;
+    this.year_of_manufacture = year_of_manufacture;
+    this.maximum_speed = maximum_speed;
+    this.engine_capacity = engine_capacity;
+}
 // 2. (Те саме, тільки через клас)
 // Створити клас який дозволяє створювати об'єкти car, з властивостями
 // модель, виробник, рік випуску, максимальна швидкість, об'єм двигуна. додати в об'єкт функції:
@@ -16,7 +22,15 @@
 // -- changeYear (newValue) - змінює рік випуску на значення newValue
 // -- addDriver (driver) - приймає об'єкт який "водій" з довільним набором полів,
 // і додає його в поточний об'єкт car
-
+class Car2 {
+    constructor(model, manufacturer, year_of_manufacture, maximum_speed, engine_capacity) {
+        this.model = model;
+        this.manufacturer = manufacturer;
+        this.year_of_manufacture = year_of_manufacture;
+        this.maximum_speed = maximum_speed;
+        this.engine_capacity = engine_capacity;
+    }
+}
 // 3. створити класс/функцію конструктор попелюшка з полями ім'я, вік, розмір ноги.
 // Створити масив з 10 попелюшок.
 // Сторити об'єкт класу "принц" за допомоги класу який має поля ім'я, вік, туфелька яку він знайшов.
