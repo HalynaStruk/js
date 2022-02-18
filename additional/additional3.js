@@ -149,7 +149,24 @@ console.log(arrayy);
 console.log(copyarrr);
 // 12. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
 let arr12 = [ 'a', 'b', 'c'];
-
-// 13. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
-
-// 14. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+let sum2 = '';
+for (let i = 0; i < arr12.length; i++) {
+    sum2 = sum2 + arr12[i];
+}
+console.log(sum2);
+// // 13. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу while зібрати всі букви в слово.
+let array13 = [ 'a', 'b', 'c'];
+let sum3 = '';
+let i = 0;
+while (i < array13.length) {
+    sum3 = sum3 + array13[i];
+    i++;
+}
+console.log(sum3);
+// // 14. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for of зібрати всі букви в слово.
+let array14 = [ 'a', 'b', 'c'];
+let sum4 = '';
+for (const str of array14) {
+    sum4 = sum4 + str;
+}
+console.log(sum4);
