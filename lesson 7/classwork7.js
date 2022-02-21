@@ -16,7 +16,7 @@ function Cars(model, manufacturer, year_of_manufacture, maximum_speed, engine_ca
         console.log(`їдемо зі швидкістю ${maximum_speed} км на годину`)
     };
     this.info = function () {
-
+        console.log(`model - ${this.model}, manufacturer - ${this.manufacturer}, year_of_manufacture - ${this.year_of_manufacture}, maximum_speed - ${this.maximum_speed}, engine_capacity - ${this.engine_capacity}`);
     };
    this.increaseMaxSpeed = function (newSpeed) {
         maximum_speed = maximum_speed + newSpeed;
@@ -36,8 +36,7 @@ function Cars(model, manufacturer, year_of_manufacture, maximum_speed, engine_ca
 let car1 = new Cars('BMW', 'Germany',2009,230,3.0);
 console.log(car1);
 car1.drive();
-console.log(car1.info());
-
+car1.info();
 car1.increaseMaxSpeed(40);
 car1.changeYea(2010);
 car1.addDriver('Ivan','КВІ304050');
@@ -63,7 +62,7 @@ class Cars2 {
         console.log(`їдемо зі швидкістю ${maximum_speed} км на годину`);
     };
     info () {
-        // return {`Id - ${this.Id}, Name - &{this.Name}`};
+        console.log(`model - ${this.model}, manufacturer - ${this.manufacturer}, year_of_manufacture - ${this.year_of_manufacture}, maximum_speed - ${this.maximum_speed}, engine_capacity - ${this.engine_capacity}`);
 
     };
     increaseMaxSpeed (newSpeed) {
@@ -83,6 +82,7 @@ class Cars2 {
 }
 let car2 = new Cars2('Audi', 'Germany',2019,240,3.0);
 console.log(car2);
+car2.info();
 car2.increaseMaxSpeed(10);
 car2.changeYear(2020);
 car2.addDriver('max','КВТ356287');
