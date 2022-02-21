@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c00cc32b-2ce5-445c-8f13-bf52d5b4ee09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lesson 7/classwork7.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 7/classwork7.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/additional/additional 3.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 3/additional 3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/additional/additional3.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 3/additional3.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +54,7 @@
       <recent name="$PROJECT_DIR$/additional" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lesson 3" />
       <recent name="$PROJECT_DIR$/lesson 6" />
       <recent name="$PROJECT_DIR$/additional" />
     </key>
@@ -81,14 +83,7 @@
       <workItem from="1644407930659" duration="1751000" />
       <workItem from="1644409923978" duration="17028000" />
       <workItem from="1644486764086" duration="28260000" />
-      <workItem from="1644746661122" duration="70027000" />
-    </task>
-    <task id="LOCAL-00028" summary="homework 4">
-      <created>1644414555623</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1644414555623</updated>
+      <workItem from="1644746661122" duration="70435000" />
     </task>
     <task id="LOCAL-00029" summary="homework 4">
       <created>1644429290422</created>
@@ -426,7 +421,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645465045013</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="classwork 7">
+      <created>1645465422794</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1645465422794</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

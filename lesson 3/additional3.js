@@ -158,7 +158,7 @@ console.log(sum2);
 let array13 = [ 'a', 'b', 'c'];
 let sum3 = '';
 let i = 0;
-while (i < array13.length) {
+while (i < array13.length){
     sum3 = sum3 + array13[i];
     i++;
 }
