@@ -42,8 +42,8 @@ for (let elaElement of aGet) {
 // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
 let aGeth = document.body.children[1].children;
 for (let elaElement of aGeth) {
-    let aEl = elaElement.children;
-    aEl.classList.add('element_XXX');
+    let aEl = elaElement.innerText;
+    aEl.classList.add('element_${aEl}');
 }
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
 let subheader = document.getElementsByClassName('sub-header');
