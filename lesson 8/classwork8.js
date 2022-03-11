@@ -46,22 +46,28 @@ for (let elaElement of aGet) {
 //     aEl.classList.add('element_XXX');
 // }
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
-let subheader = document.getElementsByClassName('sub-header');
-for (const subheaderElement of subheader) {
-    subheaderElement.style.background = prompt();
-}
+// let subheader = document.getElementsByClassName('sub-header');
+// for (const subheaderElement of subheader) {
+//     subheaderElement.style.background = prompt();
+// }
 // j) отримує всі елементи 'sub-header' та змінює колір тексту
 // у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
-let subheader2 = document.getElementsByClassName('sub-header');
-for (const subheader2Element of subheader2) {
-    if (subheader2Element.innerText === 'content 2 segment') {
-        subheader2Element.style.color = prompt();
-    }
-}
-// k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний.
+// let subheader2 = document.getElementsByClassName('sub-header');
+// for (const subheader2Element of subheader2) {
+//     if (subheader2Element.innerText === 'content 2 segment') {
+//         subheader2Element.style.color = prompt();
+//     }
+// }
+// k) отримує елемент з класом content_1 та заміняє  в ньому текст на довільний.
 // Текст отримати з prompt()
-
+let getContent1 = document.getElementsByClassName('content_1');
+getContent1[0].innerText = prompt();
 // l) отримати елементи p та змінити їм padding на 20px
-
+let getElementsP = document.getElementsByTagName('p');
+for (const elementsPElement of getElementsP) {
+    elementsPElement.style.padding = '20px';
+}
 // m) отримати елементи з класом text2 та змінити їм текст на назву групи
 // (mon-year. Пример sep-2021)
+let getElemTxt2 = document.getElementsByClassName('text2');
+getElemTxt2[0].innerText = 'sep-2021';
