@@ -25,19 +25,39 @@ getLi.style.background = 'grey';
 let getEla = document.body.children[1].children;
 for (let elaElement of getEla) {
     let aEl = elaElement.children;
-    console.log(aEl);
     aEl[0].classList.add('anchor');
 }
 // g) отримує всі елементи 'a' та у випадку, якщо текстовий контен елементу дорівнює link3,
 // змінює йому розмір тексту на 40 пікселів
-
+let aGet = document.body.children[1].children;
+for (let elaElement of aGet) {
+    let aEl = elaElement.children;
+   let txt = aEl[0].textContent;
+   // console.log(txt)
+    if (txt === 'link3') {
+        console.log(txt)
+       aEl[0].style.fontsize = '40px';
+    }
+}
 // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
-
+// let aGeth = document.body.children[1].children;
+// for (let elaElement of aGeth) {
+//     let aEl = elaElement.children;
+//     aEl.classList.add('element_XXX');
+// }
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
-
+let subheader = document.getElementsByClassName('sub-header');
+for (const subheaderElement of subheader) {
+    subheaderElement.style.background = prompt();
+}
 // j) отримує всі елементи 'sub-header' та змінює колір тексту
 // у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
-
+let subheader2 = document.getElementsByClassName('sub-header');
+for (const subheader2Element of subheader2) {
+    if (subheader2Element.innerText === 'content 2 segment') {
+        subheader2Element.style.color = prompt();
+    }
+}
 // k) отримує елемент з класом content_1 та заміняє  в ньому тест на довільний.
 // Текст отримати з prompt()
 
