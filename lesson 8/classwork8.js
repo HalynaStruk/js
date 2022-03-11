@@ -40,24 +40,24 @@ for (let elaElement of aGet) {
     }
 }
 // h) отримує всі елементи 'a' та додає їм клас element_XXX. Де XXX - текстовий контент елементу a
-// let aGeth = document.body.children[1].children;
-// for (let elaElement of aGeth) {
-//     let aEl = elaElement.children;
-//     aEl.classList.add('element_XXX');
-// }
+let aGeth = document.body.children[1].children;
+for (let elaElement of aGeth) {
+    let aEl = elaElement.children;
+    aEl.classList.add('element_XXX');
+}
 // i) отримує всі елементи 'sub-header' та змінює колір фону. Фон отримати з prompt()
-// let subheader = document.getElementsByClassName('sub-header');
-// for (const subheaderElement of subheader) {
-//     subheaderElement.style.background = prompt();
-// }
+let subheader = document.getElementsByClassName('sub-header');
+for (const subheaderElement of subheader) {
+    subheaderElement.style.background = prompt();
+}
 // j) отримує всі елементи 'sub-header' та змінює колір тексту
 // у видаку якщо текст елемнту = content 2 segment . Колір отримати з prompt()
-// let subheader2 = document.getElementsByClassName('sub-header');
-// for (const subheader2Element of subheader2) {
-//     if (subheader2Element.innerText === 'content 2 segment') {
-//         subheader2Element.style.color = prompt();
-//     }
-// }
+let subheader2 = document.getElementsByClassName('sub-header');
+for (const subheader2Element of subheader2) {
+    if (subheader2Element.innerText === 'content 2 segment') {
+        subheader2Element.style.color = prompt();
+    }
+}
 // k) отримує елемент з класом content_1 та заміняє  в ньому текст на довільний.
 // Текст отримати з prompt()
 let getContent1 = document.getElementsByClassName('content_1');
