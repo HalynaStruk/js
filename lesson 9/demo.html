@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="target"></div>
+<div class="point1"></div>
+<div class="point2"></div>
+
+<!--    Структура яку будуємо задопомогою createElement і append -->
+<!--<hr>-->
+<!--<div class="wrap">-->
+<!--<div class="outer">-->
+<!--    <div class="inner box-1"></div>-->
+<!--    <div class="inner box-2"></div>-->
+<!--</div>-->
+<!--</div>-->
+<hr>
+
+<script>
+    // create / append
+
+    // let h2_1 = document.createElement('h2');
+    // let h2_2 = document.createElement('h2');
+    // document.body.append(h2_1, h2_2); // append додає кілька елементів
+
+    let h2 = document.createElement('h2');
+    document.body.appendChild(h2); // appendChild додає один елемент
+    h2.innerText = 'lesson 9 DOM part2'
+    let target = document.getElementsByClassName('target')[0];
+    // cloneNode
+    let cloneNodeH2 = h2.cloneNode(true); // копіювання вузлів
+    target.append(cloneNodeH2);
+
+    let wrap = document.createElement('div');
+    wrap.classList.add('wrap');
+
+    let outer = document.createElement('div');
+    outer.classList.add('outer');
+
+    let box1 = document.createElement('div');
+    box1.classList.add('inner');
+    box1.classList.add('box-1');
+    // setAttribute
+    // box1.setAttribute('class', 'inner'); // class inner
+    // box1.setAttribute('class', box1.getAttribute('class') + ' box-1'); //class = inner box-1
+    let box2 = document.createElement('div');
+    box1.classList.add('inner');
+    box1.classList.add('box-2');
+
+    wrap.appendChild(outer);
+    outer.append(box1, box2);
+    document.body.append(wrap);
+
+    // next/previous sibling  / sibling element
+
+    let point1 = document.getElementsByClassName('point1')[0];
+
+
+    // a href
+
+    // Динамічна побудова структури з масива обєктів
+
+    //spred/rest
+</script>
+</body>
+</html>
