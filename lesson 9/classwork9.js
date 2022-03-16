@@ -152,13 +152,20 @@ for (let coursesArrayElement of coursesArray) {
     divTitle.innerText = coursesArrayElement.title;
     divArrayElement.appendChild(divTitle);
 
+    let divMonthHour = document.createElement('div');
+    divArrayElement.appendChild(divMonthHour);
+    divMonthHour.classList.add('direction');
+
+    // let direction = document.getElementsByClassName('direction');
+    // direction.style.display = 'flex';
+
     let divMonthDuration = document.createElement('div');
-    divMonthDuration.innerText = 'Курс триває ' + coursesArrayElement.monthDuration + ' місяців';
-    divArrayElement.appendChild(divMonthDuration);
+    divMonthDuration.innerText = 'Курс триває ' + coursesArrayElement.monthDuration + ' місяців - ';
+    divMonthHour.appendChild(divMonthDuration);
 
     let divHourDuration = document.createElement('div');
     divHourDuration.innerText = coursesArrayElement.hourDuration + ' годин навчання';
-    divArrayElement.appendChild(divHourDuration);
+    divMonthHour.appendChild(divHourDuration);
 
     let ulModules = document.createElement('ul');
     divArrayElement.appendChild(ulModules);
@@ -168,5 +175,4 @@ for (let coursesArrayElement of coursesArray) {
         liModules.innerText = elementModule;
         ulModules.appendChild(liModules);
     }
-
 }
