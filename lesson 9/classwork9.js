@@ -163,9 +163,10 @@ for (let coursesArrayElement of coursesArray) {
     let ulModules = document.createElement('ul');
     divArrayElement.appendChild(ulModules);
 
-    // for (const elementModule of coursesArrayElement.modules) {
-    //     let liModules = document.createElement('li');
-    //     ulModules.appendChild(li);
-    //     liModules.innerText = elementModule;
-    // }
+    for (let elementModule of coursesArrayElement.modules) {
+        let liModules = document.createElement('li');
+        liModules.innerText = elementModule;
+        ulModules.appendChild(liModules);
+    }
+
 }
