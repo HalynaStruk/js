@@ -6,8 +6,234 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        /** {*/
+        /*    margin: 0;*/
+        /*}*/
+        /*.target {*/
+        /*    width: 200px;*/
+        /*    height: 200px;*/
+        /*    background: silver;*/
+        /*}*/
+    </style>
 </head>
 <body>
+<!--<button onclick="(function f() {-->
+<!--  alert('ooooohhh');-->
+<!--}())">click me</button>-->
 
+<!--<h1 id="title"></h1>-->
+<!--<button id="btn1">click me</button>-->
+
+<!--<form>-->
+<!--    <input type="text" name="login">-->
+<!--    <input type="text" name="password">-->
+<!--    <button>sign in</button>-->
+<!--</form>-->
+
+<!--<form >-->
+<!--    <input type="text" name="username">-->
+<!--    <button>find</button>-->
+<!--</form>-->
+<!--<ul id="results"></ul>-->
+
+
+<!-- status-->
+<!--<input type="checkbox" name="status" id="chbx">-->
+
+<!--regexp регулярний вираз-->
+<form action="">
+<!--    <input type="text" required minlength="3" maxlength="7">-->
+<!--    <input type="number" required minlength="3" maxlength="7">-->
+<!--    <input type="text" pattern="+380[0-9]{9}">-->
+<!--    або -->
+    <input type="text" pattern="+380\d{9}">
+
+    <input type="text" pattern="[a-zA-Zа-яА-ЯїЇґҐ]{2}">
+<!--    або -->
+    <input type="text" pattern="\w{2}"> <!-- \w тільки латиниця -->
+
+
+    <button>send</button>
+</form>
+
+<!--<div class="target"></div>-->
+<!--<form action="" name="form1">-->
+<!--    <input type="text" name="login">-->
+<!--    <button>save</button>-->
+<!--</form>-->
+
+<script>
+
+    // click...eventLisener
+
+    // let btn1 = document.getElementById('btn1'); // dom html element
+    // тут виконається остання функція
+    // btn1.onclick = function () {
+    //     console.log('you click me');
+    // };
+    // btn1.onclick = function () {
+    //     console.log('you click me another way');
+    // };
+
+    // eventLisener - обидві функції виконаються
+    // btn1.addEventListener('click', function () {
+    //     console.log('you click me');
+    // });
+
+    // object  taget
+
+    // btn1.addEventListener('click', function (e) {
+    //     console.log('you click me another way');
+    //     console.log(e);
+    //     console.log(e.target);
+    // });
+
+    // btn1.addEventListener('mousemove', function (e) {
+    //     console.log('you click me another way');
+    //     console.log(e);
+    //     console.log(e.target);
+    // });
+
+    // let title = document.getElementById('title');
+    // document.onmousemove = function (e) {
+    // title.innerText = `x = ${e.clientX}; y = ${e.clientY}`;
+    // };
+
+    // let points = [];
+    // document.onclick = function (e) {
+    //     points.push({x: e.clientX, y: e.clientY});
+    // };
+    // btn1.addEventListener('click', () => {
+    //     console.log(points);
+    // });
+
+    // preventDefault сторінка не перезавантажується при нажатті кнопки, але submit відбувається
+    // forms+events
+
+    // let users = [];
+    // let form = document.forms[0];
+    // form.onsubmit = function (e) {
+    //     e.preventDefault();
+    //     let user = {login: e.target.login.value, password: e.target.password.value}
+    //     users.push(user);
+    //     console.log(users);
+    //     // console.log('submit');
+    //     // console.log(e.target.login.value); // e.target це ціль знущання ;) тобто form
+    //     // console.log(e.target.password.value);
+    // };
+
+    //  let inputLogin = form.login;
+    // inputLogin.addEventListener('input', (e) => {
+    //     // console.log('input done');
+    //     // console.log(e.target.value);
+    //     if (e.target.value.toLowerCase().includes('duck')) {
+    //         alert('krya-krya');
+    //     }
+    // });
+
+    // filter by
+
+   //  let users = [
+   //      {name: 'vasya', age: 31, status: false},
+   //      {name: 'petya', age: 30, status: true},
+   //      {name: 'kolya', age: 29, status: true},
+   //      {name: 'olya', age: 28, status: false},
+   //      {name: 'max', age: 30, status: true},
+   //      {name: 'anya', age: 31, status: false},
+   //      {name: 'oleg', age: 28, status: false},
+   //      {name: 'andrey', age: 29, status: true},
+   //      {name: 'masha', age: 30, status: true},
+   //      {name: 'olya', age: 31, status: false},
+   //      {name: 'max', age: 31, status: true}
+   //  ];
+   //
+   //  let form = document.forms[0];
+   //  let userNameInput = form.username; // або e.target.username у function (e) {тут}
+   //  let results = document.getElementById('results');
+   //
+   // form.onsubmit = function (e) {
+   //     e.preventDefault();
+   //     results.innerText = '';
+   //     // e.target.username;
+   //     let usernameValue = userNameInput.value;
+   //     let filter = users.filter(value => value.name === usernameValue);
+   //     for (let item of filter) {
+   //         let li = document.createElement('li');
+   //         li.innerText = `${item.name} ${item.age} ${item.status}`
+   //         results.append(li);
+   //     }
+   // }
+
+     // let users = [
+     //     {name: 'vasya', age: 31, status: false},
+     //     {name: 'petya', age: 30, status: true},
+     //     {name: 'kolya', age: 29, status: true},
+     //     {name: 'olya', age: 28, status: false},
+     //     {name: 'max', age: 30, status: true},
+     //     {name: 'anya', age: 31, status: false},
+     //     {name: 'oleg', age: 28, status: false},
+     //     {name: 'andrey', age: 29, status: true},
+     //     {name: 'masha', age: 30, status: true},
+     //     {name: 'olya', age: 31, status: false},
+     //     {name: 'max', age: 31, status: true}
+     // ];
+     //
+     // let chbx = document.getElementById('chbx');
+     // let resultsArray = [];
+     // chbx.onclick = function () {
+     //     if (chbx.checked) {
+     //         resultsArray = users.filter(value => value.status);
+     //     } else {
+     //         resultsArray = users.filter(value => !value.status);
+     //     }
+     //     for (const item of resultsArray) {
+     //         console.log(item);
+     //     }
+     // }
+
+    // regexp регулярний вираз
+
+    let phone = '+380671231212';
+    let re = /\+380\d{9}/i; // /-початок регулярки\+ -означає що + є символом 380\d- [0-9] цифрові значення{9}- 9 цифер /-кінець регулярки i
+    console.log(phone.match(re));
+
+    // let target =  document.getElementsByClassName('target')[0];
+// console.log(target);
+// target.onclick = function () {
+//     console.log('click1');
+// }
+// target.onclick = function () {
+//     console.log('click2');
+// }
+
+// якщо дві події то використовуємо addEventListener, бо onclick виконає тільки останню функцію
+// target.addEventListener('click', function () {
+//     console.log('click1');
+// })
+// target.addEventListener('click', function () {
+//     console.log('click2');
+// })
+
+// target.onmousemove = function (eventObj) {
+//     let x = eventObj.clientX;
+//     let y = eventObj.clientY;
+//     console.log(x, y);
+//     this.style.background = `rgb(${x},${y},${x-y})`;
+// }
+
+// let form1 = document.forms.form1;
+// form1.onsubmit = function (e) {
+//     e.preventDefault();
+//     console.log('submit');
+// };
+// form1.login.oninput = function (e) {
+//     // console.log(e); //виводить в консоль подію
+//     console.log(this.value);
+//     this.style.background = this.value;
+// }
+
+//
+</script>
 </body>
 </html>

@@ -154,10 +154,7 @@ for (let coursesArrayElement of coursesArray) {
 
     let divMonthHour = document.createElement('div');
     divArrayElement.appendChild(divMonthHour);
-    divMonthHour.classList.add('direction');
-
-    // let direction = document.getElementsByClassName('direction');
-    // direction.style.display = 'flex';
+    divMonthHour.style.display = 'flex';
 
     let divMonthDuration = document.createElement('div');
     divMonthDuration.innerText = 'Курс триває ' + coursesArrayElement.monthDuration + ' місяців - ';
