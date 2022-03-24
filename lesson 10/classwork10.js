@@ -88,7 +88,7 @@ let div = document.createElement('div');
 document.body.appendChild(div);
 let table = document.createElement('table');
 div.appendChild(table);
-table.style.border = '3px solid black';
+table.style.border = '3px solid yellow';
     for (let i = 0; i < row; i++) {
         let row = document.createElement('tr');
         row.style.border = '2px solid #00BFFF';
@@ -97,25 +97,84 @@ table.style.border = '3px solid black';
         let column = document.createElement('td');
         table.appendChild(row);
         row.appendChild(column);
-        column.style.border = '2px solid yellow';
+        column.style.border = '2px solid #00BFFF';
         column.innerText = `${txt}`;
     }
     }
 }
     table(tr, td, contents);
 }
-
 // - Сворити масив не цензцрних слів.
 // Сворити інпут текстового типу.
-// Якщо людина вводить слово і воно міститься в масиві не цензурних слів кинути алерт з попередженням.
-// Перевірку робити при натисканні на кнопку
-//
-//
+// Якщо людина вводить слово і воно міститься в масиві не цензурних слів
+// кинути алерт з попередженням. Перевірку робити при натисканні на кнопку
+let badWords = ['дурбелик', 'мерзотник', 'нездара'];
+let div3 = document.createElement('div');
+document.body.appendChild(div3);
+div3.style.display = 'flex';
+div3.style.alignItems = 'center';
+div3.style.columnGap = '10px';
+div3.style.marginLeft = '10px';
+
+let pEnterWord = document.createElement('p');
+pEnterWord.innerHTML = '<b>Enter word</b>';
+let inputTxt = document.createElement('input');
+let inputBtn = document.createElement('input');
+inputBtn.type = 'button';
+inputBtn.value = 'Check the word';
+inputBtn.style.background = '#00BFFF';
+inputBtn.style.border = '2px solid #00BFFF';
+inputBtn.style.borderRadius = '5px'
+div3.append(pEnterWord, inputTxt, inputBtn);
+
+inputBtn.addEventListener('click', function () {
+    let txt = inputTxt.value;
+    for (const badWordsElement of badWords) {
+        if (txt === badWordsElement){
+            alert('Введіть інше слово');
+            txt = '';
+        }
+        if (txt) {
+            alert('Все добре');
+            txt = '';
+        }
+    }
+});
 // - Сворити масив не цензцрних слів.
 //     Сворити інпут текстового типу.
 //     Потрібно перевіряти чи не містить ціле речення в собі погані слова.
 //     Кинути алерт з попередженням у випадку якщо містить.
 //     Перевірку робити при натисканні на кнопку
-
 /* Когда пользователь нажимает на кнопку,
 переключение между скрытием и отображением раскрывающегося содержимого */
+let words = ['дурбелик', 'мерзотник', 'нездара'];
+let div4 = document.createElement('div');
+document.body.appendChild(div4);
+div4.style.display = 'flex';
+div4.style.alignItems = 'center';
+div4.style.columnGap = '10px';
+div4.style.marginLeft = '10px';
+
+let pword = document.createElement('p');
+pword.innerHTML = '<b>Enter word</b>';
+let inputWord = document.createElement('input');
+let btn = document.createElement('button');
+btn.innerText = 'Check the word';
+btn.style.background = '#00BFFF';
+btn.style.border = '2px solid #00BFFF';
+btn.style.borderRadius = '5px'
+div4.append(pword, inputWord, btn);
+
+btn.addEventListener('click', function () {
+    let txt = inputWord.value;
+    for (const badWordsElement of words) {
+        if (txt.includes(badWordsElement)){
+            alert('Речення містить нецензурні слова');
+            txt = '';
+        }
+        if (txt) {
+            alert('Речення складене добре');
+            txt = '';
+        }
+    }
+});
