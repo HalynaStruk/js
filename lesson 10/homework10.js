@@ -1,6 +1,6 @@
 // 1. Создать произвольный елемент с id = text.
 // Используя JavaScript, сделайте так, чтобы при клике на кнопку исчезал элемент с id="text".
-let div = document.createElement('div')
+let div = document.createElement('div');
 document.body.appendChild(div);
 div.id = 'text';
 div.innerText = 'Some text that is hidden when you press the button "Hide text"';
