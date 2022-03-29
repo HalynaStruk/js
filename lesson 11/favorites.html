@@ -9,7 +9,16 @@
 </head>
 <body>
 <div id="container"></div>
-<a href="./favorites.html">Show Favorites</a>
-<script src="classwork11.js"></script>
+<a href="./classwork%2011.html">Home</a>
+
+<script>
+
+ let users = JSON.parse(localStorage.getItem('favorites'));
+ for (const user of users) {
+     let divUser = document.createElement('div');
+     divUser.innerText = `Name: ${user.name}, Age: ${user.age}, Status: ${user.status}`;
+     document.body.append(divUser);
+ }
+</script>
 </body>
 </html>
