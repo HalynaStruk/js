@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c00cc32b-2ce5-445c-8f13-bf52d5b4ee09" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson 12/classwork 12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson 12/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson 12/homework 12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 11/classwork 11.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 11/classwork 11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 11/favorites.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 11/favorites.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson 12/classwork12.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson 12/homework12.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson 12/classwork 12.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 12/classwork 12.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson 12/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 12/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson 12/homework 12.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 12/homework 12.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +52,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -87,14 +88,7 @@
       <workItem from="1644407930659" duration="1751000" />
       <workItem from="1644409923978" duration="17028000" />
       <workItem from="1644486764086" duration="28260000" />
-      <workItem from="1644746661122" duration="216107000" />
-    </task>
-    <task id="LOCAL-00059" summary="classwork 6">
-      <created>1645006424547</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1645006424547</updated>
+      <workItem from="1644746661122" duration="229348000" />
     </task>
     <task id="LOCAL-00060" summary="additional">
       <created>1645030263063</created>
@@ -432,14 +426,20 @@
       <option name="project" value="LOCAL" />
       <updated>1648582066978</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="homework 12">
+      <created>1648650630532</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1648650630532</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="classwork 1" />
     <MESSAGE value="homework 1" />
     <MESSAGE value="homework 2" />
     <MESSAGE value="classwork 2" />
@@ -464,6 +464,7 @@
     <MESSAGE value="classwork 10" />
     <MESSAGE value="classwork 11" />
     <MESSAGE value="homework 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework 11" />
+    <MESSAGE value="homework 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="homework 12" />
   </component>
 </project>
