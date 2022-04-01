@@ -4,7 +4,9 @@
 // зробити кнопку до кожного поста. при кліку на яку виводяться в окремий блок
 // всі коментарі поточного поста
 fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(response => {return response.json();})
+    .then(response => {
+        return response.json();
+    })
     .then(postsData => {
         let divGeneral = document.createElement('div');
         divGeneral.classList.add('grid-container');
@@ -15,7 +17,6 @@ fetch('https://jsonplaceholder.typicode.com/posts')
             divElement.innerHTML = `
             <div><h1>${post.id}. ${post.title}</h1>
             <p><b>body:</b> ${post.body}</p></div>
-<!--            <div><button class="btn">Comments</button><div class="commentHide"></div></div>-->
             `;
             divElement.classList.add('grid-item');
             divGeneral.append(divElement);
@@ -56,6 +57,6 @@ fetch('https://jsonplaceholder.typicode.com/posts')
 
                     })
 
-        }
+            }
         }
     })
