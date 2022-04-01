@@ -7,74 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-        body {
-            display: flex;
-            justify-content: center;
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-row-gap: 10px;
+            grid-column-gap: 10px;
         }
-
-        .wraper {
-            width: 1200px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .post {
-            width: 220px;
-            height: 260px;
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid darkgrey;
-            border-radius: 15px;
+        .grid-item {
+            background-color: #f3f380;
+            border: 4px solid deepskyblue;
+            border-radius: 60px;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            cursor: pointer;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            justify-content: space-between;
         }
-
-        .post:hover {
-            background: #d8e4ef;
-            transition: .3s;
-            transform: rotateY(10grad);
+        .btn {
+            height: 30px;
+            width: 150px;
+            background: deepskyblue;
+            border: 4px solid deepskyblue;
+            border-radius: 60px;
         }
-
-        .post h3 {
-            margin: 0;
+        .hidden {
+            display: none;
         }
-
-        .post h4 {
-            height: 50px;
-        }
-
-        .comment {
-            width: 220px;
-            height: 260px;
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid darkgrey;
-            border-radius: 15px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            cursor: pointer;
-            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-        }
-
-        .comment:hover {
-            background: #d8e4ef;
-            transition: .3s;
-            transform: rotateY(10grad);
-        }
-
-        .comment h3 {
-            margin: 0;
-        }
-
-        .comment h4 {
-            height: 50px;
-        }
-
     </style>
 </head>
 <body>

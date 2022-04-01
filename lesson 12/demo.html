@@ -56,28 +56,28 @@
 // });
 
 // 2-ий спосіб - не використовують, бо 1-ий зручніший
-fetch('https://jsonplaceholder.typicode.com/users'  , {method: 'Get',}) // робить запит на URL і отримую інформацію від сервера
-    .then(value => value.json())
-    .then(value => console.log(value));
-
-let form = document.forms.saveUserForm;
-// onsubmit відправка
-form.onsubmit = (e) => {
-    e.preventDefault(); //припиняємо перезавантаження сторінки
-    let name = form.name.value;
-    let username = form.username.value;
-    let email = form.email.value;
-
-    fetch('https://jsonplaceholder.typicode.com/posts', {
-        method: 'POST',
-        body: JSON.stringify({ name, username, email}),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-    }) .then(value => value.json())
-        .then(value => console.log(value));
-
-}
+// fetch('https://jsonplaceholder.typicode.com/users'  , {method: 'Get',}) // робить запит на URL і отримую інформацію від сервера
+//     .then(value => value.json())
+//     .then(value => console.log(value));
+//
+// let form = document.forms.saveUserForm;
+// // onsubmit відправка
+// form.onsubmit = (e) => {
+//     e.preventDefault(); //припиняємо перезавантаження сторінки
+//     let name = form.name.value;
+//     let username = form.username.value;
+//     let email = form.email.value;
+//
+//     fetch('https://jsonplaceholder.typicode.com/posts', {
+//         method: 'POST',
+//         body: JSON.stringify({ name, username, email}),
+//         headers: {
+//             'Content-type': 'application/json; charset=UTF-8',
+//         },
+//     }) .then(value => value.json())
+//         .then(value => console.log(value));
+//
+// }
 
 // але якщо хочемо зберегти або відновлювати інформацію, то використувуємо цей спосіб
 // fetch('https://jsonplaceholder.typicode.com/posts', { // ми відправляємо на урлу інформацію
@@ -92,6 +92,8 @@ form.onsubmit = (e) => {
 //     },
 // }) .then(value => value.json())
 //     .then(value => console.log(value)); // тут ми отримали відповідь з сервера
+
+
 
 
 </script>
