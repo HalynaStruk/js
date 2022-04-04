@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c00cc32b-2ce5-445c-8f13-bf52d5b4ee09" name="Changes" comment="">
+    <list default="true" id="c00cc32b-2ce5-445c-8f13-bf52d5b4ee09" name="Changes" comment="classwork 12">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 12/classwork 12.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 12/classwork 12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 12/classwork12.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 12/classwork12.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 12/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 12/demo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 12/homework 12.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 12/homework 12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson 12/homework12.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 12/homework12.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,9 +41,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/additional" />
     <property name="project.structure.last.edited" value="Project" />
@@ -88,21 +87,8 @@
       <workItem from="1644407930659" duration="1751000" />
       <workItem from="1644409923978" duration="17028000" />
       <workItem from="1644486764086" duration="28260000" />
-      <workItem from="1644746661122" duration="238364000" />
-    </task>
-    <task id="LOCAL-00061" summary="additional">
-      <created>1645030290170</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1645030290170</updated>
-    </task>
-    <task id="LOCAL-00062" summary="additional">
-      <created>1645032070544</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1645032070544</updated>
+      <workItem from="1644746661122" duration="240998000" />
+      <workItem from="1648995627713" duration="19948000" />
     </task>
     <task id="LOCAL-00063" summary="homework 6">
       <created>1645179929603</created>
@@ -433,14 +419,27 @@
       <option name="project" value="LOCAL" />
       <updated>1648810144232</updated>
     </task>
-    <option name="localTasksCounter" value="110" />
+    <task id="LOCAL-00110" summary="classwork 12">
+      <created>1648823198155</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1648823198155</updated>
+    </task>
+    <task id="LOCAL-00111" summary="classwork 12">
+      <created>1648823283328</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1648823283328</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="homework 1" />
     <MESSAGE value="homework 2" />
     <MESSAGE value="classwork 2" />
     <MESSAGE value="homework 3" />
@@ -465,6 +464,7 @@
     <MESSAGE value="classwork 11" />
     <MESSAGE value="homework 11" />
     <MESSAGE value="homework 12" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework 12" />
+    <MESSAGE value="classwork 12" />
+    <option name="LAST_COMMIT_MESSAGE" value="classwork 12" />
   </component>
 </project>
