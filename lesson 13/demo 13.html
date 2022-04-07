@@ -133,35 +133,102 @@
     //     console.log('F')
     // })
 
-
     // Підфункції Promise
     //
-    let one = new Promise((resolve => {
-        setTimeout(()=>{
-          resolve(1)
-        },3000)
-    }))
+    // let one = new Promise((resolve => {
+    //     setTimeout(()=>{
+    //       resolve(1)
+    //     },3000)
+    // }))
+    //
+    // let two = new Promise((resolve, reject) => {
+    //     setTimeout(()=>{
+    //         resolve(2)
+    //         // reject(2) це означає, що операція не вдалася
+    //     },2000)
+    // })
+    //
+    // let three = new Promise((resolve => {
+    //     setTimeout(()=>{
+    //         resolve(3)
+    //     },1000)
+    // }))
+    //
+    // Promise.race([one, two, three])
+    // .then(value => {
+    //     console.log(value); // буде 3, тобто race дає дані звідки вони надходять найшвидше
+    //     // наприклад нам потрібні дані про погоду у Львові, ми на три різні серевера
+    //     // даємо запит і отримаємо з того сервера, що найшвидше дасть відповідь
+    // })
+    //
+    // Promise.all([one, two, three]) // віддасть дані в такому порядку, як вкажемо тут
+    //     .then(value => {
+    //         console.log(value); // буде [1,2,3]
+    //         // але якщо хоча б один Promise завалиться, то всі що йдуть
+    //         // після нього теж не будуть працювати
+    //         // рішення проблеми нище, дописати catch
+    //         // там де ми знаємо що Promise не працює,
+    //         // але краще використати Promise.allSettled
+    //     })
+    //
+    // // там де ми знаємо що Promise не працює дописати catch(це частково кастиль)
+    // Promise.all([one, two.catch(reason => {}), three])
+    //     .then(value => {
+    //         console.log(value); // [1, undefined, 3]
+    //     })
+    // // кращий спосіб
+    // Promise.allSettled([one, two, three])
+    //     .then(value => {
+    //         console.log(value); // [{status:"fulfilled" , value:1},{status:"rejected", value:2},{status:"fulfilled", value:3}]
+    //     })
 
-    let two = new Promise((resolve => {
-        setTimeout(()=>{
-            resolve(2)
-        },2000)
-    }))
+    // Async await допомагає нам писати асинхронний код в синхронному стилі
+    //
+    function clearHouse(isJobDone) {
+        return new Promise((fulfilled, reject) => {
+            setTimeout(()=>{
+                if (isJobDone) {
+                    money = 500;
+                    fulfilled(money);
+                } else {
+                    reject('ERRROOOR')
+                }
+            }, 2000)
+        })
+    }
 
-    let three = new Promise((resolve => {
-        setTimeout(()=>{
-            resolve(3)
-        },1000)
-    }))
-
-    Promise.race([one, two, three])
-    .then(value => {
-        console.log(value); // буде 3, тобто race дає дані звідки вони надходять найшвидше
-        // наприклад нам потрібні дані про погоду у Львові, ми на три різні серевера
-        // даємо запит і отримаємо з того сервера, що найшвидше дасть відповідь
-
+    clearHouse(true,(err,data)=>{
+        console.log(err);
+        console.log(data);
     })
 
+    function buyJeans(money) {
+        return new Promise((fulfilled, reject) => {
+            setTimeout(()=>{
+                if (money > 200) {
+                    console.log('Good geans bro')
+                    money = money - 200;
+                    fulfilled(money)
+                } else {
+                    console.log('Nema groshey');
+                    reject('Nema')
+                }
+            }, 1000)
+        })
+    }
+
+    // Async await допомагає нам писати асинхронний код в синхронному стилі, але він всерівно є асихронним
+    async function houseCleaner() {
+        let reward = await clearHouse(true);
+        console.log(reward);
+
+        let reshta = await buyJeans(reward);
+        console.log(reshta);
+    }
+    houseCleaner(); // тобто поки не виконається await clearHouse(true) не буде
+    // викрнуватись синхронна дія console.log(reward),
+    // бо ми вказуємо await(чекай поки виконається) а тоді роби console.log(reward)
+    // і так далі
 
 </script>
 </body>
