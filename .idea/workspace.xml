@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c00cc32b-2ce5-445c-8f13-bf52d5b4ee09" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson 13/demo 13.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson 13/demo 13.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,14 +89,7 @@
       <workItem from="1648995627713" duration="23200000" />
       <workItem from="1649110363323" duration="10229000" />
       <workItem from="1649343385508" duration="7000" />
-      <workItem from="1649343425452" duration="7301000" />
-    </task>
-    <task id="LOCAL-00065" summary="classwork 6">
-      <created>1645180168279</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1645180168279</updated>
+      <workItem from="1649343425452" duration="7647000" />
     </task>
     <task id="LOCAL-00066" summary="additional">
       <created>1645183238403</created>
@@ -435,14 +427,20 @@
       <option name="project" value="LOCAL" />
       <updated>1649358793224</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="callback, promise, Async await">
+      <created>1649360721459</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1649360721459</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="homework 3" />
     <MESSAGE value="classwork 3" />
     <MESSAGE value="homework 4" />
     <MESSAGE value="classwork 4" />
@@ -467,6 +465,7 @@
     <MESSAGE value="classwork 12" />
     <MESSAGE value="mysql" />
     <MESSAGE value="callback, promise" />
-    <option name="LAST_COMMIT_MESSAGE" value="callback, promise" />
+    <MESSAGE value="callback, promise, Async await" />
+    <option name="LAST_COMMIT_MESSAGE" value="callback, promise, Async await" />
   </component>
 </project>

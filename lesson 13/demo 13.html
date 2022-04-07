@@ -230,6 +230,22 @@
     // бо ми вказуємо await(чекай поки виконається) а тоді роби console.log(reward)
     // і так далі
 
+
+    // якщо буде десь reject, то:
+    async function houseCleanerReject() {
+        try {
+            let reward = await clearHouse(true);
+            console.log(reward);
+
+            let reshta = await buyJeans(100); // тут reject, бо не хватає грошей
+            console.log(reshta);
+        } catch (e) {
+            console.error(e);
+        }
+    }
+    houseCleanerReject();
+
+
 </script>
 </body>
 </html>
