@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+
+<script>
+    // function goToUSA(isCovidPresent, cb) {
+    //     setTimeout(()=>{
+    //         if (isCovidPresent === true) {
+    //             cb('Ковід в країні! Беру під особистий контроль!!', null)
+    //         } else {
+    //             cb(null, 'Ура я їду в Мармарис')
+    //         }
+    //
+    //     },2000)
+    // }
+    // goToUSA(true, (negativa, positive) => {
+    //     console.log(negativa);
+    //     console.log(positive);
+    //     // if (negativa){
+    //     //     console.log('Ехх Мінус відпустка')
+    //     // } else {
+    //     //     сonsole.log('Ураааа')
+    //     // }
+    // })
+
+    // call back
+    // let money = 0;
+    // function clearHouse(isJobDone, cb) {
+    //     setTimeout(()=>{
+    //         if (isJobDone) {
+    //             money = 500;
+    //             cb(null, money);
+    //         } else {
+    //             cb('ERRROOOR', null)
+    //         }
+    //     }, 2000)
+    // }
+    // clearHouse(true,(err,data)=>{
+    //     console.log(err);
+    //     console.log(data);
+    // })
+    //
+    // function buyJeans(money, cb) {
+    //     setTimeout(()=>{
+    //         if (money > 200) {
+    //             console.log('Good geans bro')
+    //             money = money - 200;
+    //             cb(null, money)
+    //         } else {
+    //             console.log('Nema groshey');
+    //             cb('Nema', null)
+    //         }
+    //     }, 1000)
+    // }
+    //
+    // clearHouse(true, (err,data)=>{
+    //     if (err) {
+    //         document.write('House is not clear')
+    //     } else {
+    //         document.write('Job done boss')
+    //         buyJeans(money, (er, reshta)=>{
+    //            if (er) {
+    //                document.write('No money')
+    //            } else {
+    //                document.write('УРАААА')
+    //            }
+    //         })
+    //     }
+    // })
+
+    // Promise це обєкт, який має три стани panding, fulfilled, rejected
+    // panding(очікування): початковий стан, не виконано і не відхилено.
+    // fulfilled(виконано): це означає, що операція була успішно завершена.
+    // rejected(відхилено): це означає, що операція не вдалася.
+    //
+    // function clearHouse(isJobDone) {
+    //     return new Promise((fulfilled, reject) => {
+    //         setTimeout(()=>{
+    //             if (isJobDone) {
+    //                 money = 500;
+    //                 fulfilled(money);
+    //             } else {
+    //                 reject('ERRROOOR')
+    //             }
+    //         }, 2000)
+    //     })
+    //
+    // }
+    // clearHouse(true,(err,data)=>{
+    //     console.log(err);
+    //     console.log(data);
+    // })
+    //
+    // function buyJeans(money) {
+    //     return new Promise((fulfilled, reject) => {
+    //         setTimeout(()=>{
+    //             if (money > 200) {
+    //                 console.log('Good geans bro')
+    //                 money = money - 200;
+    //                 fulfilled(money)
+    //             } else {
+    //                 console.log('Nema groshey');
+    //                 reject('Nema')
+    //             }
+    //         }, 1000)
+    //     })
+    // }
+    //
+    // clearHouse(true)
+    // .then(reward => {
+    //     console.log(reward); // тут є 500
+    //     return buyJeans(reward) // те що тут return перейде в reshta
+    //     // return buyJeans(100) // якщо замість reward буде 100, нам не
+    //     // хватить грошей купити джинси і спрацює catch
+    //     // return buyJeans(100).catch(reason => {console.error(reason) }) якщо потрібно,
+    //     // то можна розглянути помилку тільки для цієї функції
+    // })
+    // .then(reshta => { // сюди вже money
+    //     console.log(reshta);
+    // })
+    // .catch(reason => { // якщо спрацює помилка(грошей буде не достатньо) то використовуємо catch
+    //     console.error(reason)
+    // })
+    // .finally(() => { // виконається завжди яким би не був результат
+    //     console.log('F')
+    // })
+
+
+    // Підфункції Promise
+    //
+    let one = new Promise((resolve => {
+        setTimeout(()=>{
+          resolve(1)
+        },3000)
+    }))
+
+    let two = new Promise((resolve => {
+        setTimeout(()=>{
+            resolve(2)
+        },2000)
+    }))
+
+    let three = new Promise((resolve => {
+        setTimeout(()=>{
+            resolve(3)
+        },1000)
+    }))
+
+    Promise.race([one, two, three])
+    .then(value => {
+        console.log(value); // буде 3, тобто race дає дані звідки вони надходять найшвидше
+        // наприклад нам потрібні дані про погоду у Львові, ми на три різні серевера
+        // даємо запит і отримаємо з того сервера, що найшвидше дасть відповідь
+
+    })
+
+
+</script>
+</body>
+</html>
